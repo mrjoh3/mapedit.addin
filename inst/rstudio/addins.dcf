@@ -1,0 +1,4 @@
+Name: Get geometry
+  Description: Get geometry from mapedit
+Binding: mapeditAddin
+Interactive: true

@@ -1,24 +1,14 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-# mapedit.addin
+mapedit.addin
+=============
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
 The goal of mapedit.addin is to ...
 
-## Installation
+Installation
+------------
 
 You can install the released version of mapedit.addin from [CRAN](https://CRAN.R-project.org) with:
 
@@ -26,9 +16,7 @@ You can install the released version of mapedit.addin from [CRAN](https://CRAN.R
 devtools::install_github("mrjoh3/mapedit.addin")
 ```
 
-## Example
+Example
+-------
 
 This allows you to interactively create a geometry object that can then be saved and used in your code
-
-
-
