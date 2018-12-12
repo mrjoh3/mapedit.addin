@@ -1,8 +1,12 @@
 Package: mapedit.addin
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: RSudio Addin for the mapedit package
+Version: 0.1.0
+Authors@R: c(
+    person("Matt", "Johnson", email = "mrjoh3@gmail.com",
+    role = c("aut", "cre"))
+    )
+Maintainer: Matt Johnson <mrjoh3@gmail.com>
+Description: Uses the RSudio and mapedit GUI's to create spatial data.
 Depends: R (>= 3.5.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
