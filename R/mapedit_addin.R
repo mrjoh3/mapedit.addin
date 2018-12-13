@@ -9,6 +9,7 @@
 #' @importFrom shiny callModule paneViewer observeEvent stopApp runGadget
 #' @importFrom mapview mapview
 #' @importFrom sf write_sf
+#' @importFrom rstudioapi getActiveDocumentContext
 #' @export
 #'
 #' @examples
@@ -23,13 +24,32 @@ mapeditAddin <- function() {
 
   server <- function(input, output, session) {
 
-    geo <- callModule(editMod, "editor", mapview()@map)
+
+    ct <- getActiveDocumentContext()
+
+    TEXT <<- ct$selection[[1]]$text
+    OBJECTNAME <- ifelse(TEXT == '', 'geom', TEXT)
+    FILENAME <- ifelse(TEXT == '', 'saved_geometry.geojson', paste0(TEXT, '.geojson'))
+    SF_OBJECT <- NULL
+
+    try(SF_OBJECT <- get(TEXT, silent = TRUE))
+
+    if (class(SF_OBJECT) == 'sf') {
+      geo <- callModule(editMod, "editor", mapview(SF_OBJECT)@map)
+    } else {
+      geo <- callModule(editMod, "editor", mapview()@map)
+    }
+
+
 
     observeEvent(input$done, {
-      geom <<- geo()$finished
+      geom <- geo()$finished
+
+      if (!is.null(geom) & !is.null(SF_OBJECT)) geom <- st_intersection(SF_OBJECT, geom)
 
       if (!is.null(geom)) {
-        sf::write_sf(geom, 'saved_geometry.geojson')
+        assign(OBJECTNAME, geom, envir = .GlobalEnv)
+        sf::write_sf(geom, FILENAME, update = TRUE)
       }
 
       stopApp()

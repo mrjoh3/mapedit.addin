@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "saved_geometry",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "X_leaflet_id": 163, "feature_type": "rectangle" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 8.770115, 50.815145 ], [ 8.770115, 50.815145 ], [ 8.770121, 50.815145 ], [ 8.770121, 50.815145 ], [ 8.770115, 50.815145 ] ] ] } },
+{ "type": "Feature", "id": 0, "properties": { "X_leaflet_id": 168, "feature_type": "rectangle" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 8.770051, 50.814684 ], [ 8.770051, 50.815104 ], [ 8.77106, 50.815104 ], [ 8.77106, 50.814684 ], [ 8.770051, 50.814684 ] ] ] } }
+]
+}
