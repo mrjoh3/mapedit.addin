@@ -11,6 +11,15 @@ Depends: R (>= 3.5.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    leaflet,
+    mapedit,
+    mapview,
+    miniUI,
+    rstudioapi,
+    sf,
+    shiny,
+    shinyWidgets
 Suggests: 
     testthat
 RoxygenNote: 6.1.1

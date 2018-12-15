@@ -2,7 +2,7 @@
 % Please edit documentation in R/mapedit_addin.R
 \name{mapeditAddin}
 \alias{mapeditAddin}
-\title{MapEdit Addin}
+\title{mapedit Addin}
 \usage{
 mapeditAddin()
 }
