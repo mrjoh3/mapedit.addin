@@ -15,11 +15,11 @@ Imports:
     leaflet,
     mapedit,
     mapview,
-    miniUI,
-    rstudioapi,
-    sf,
-    shiny,
-    shinyWidgets
+    miniUI (>= 0.1.1.1),
+    rstudioapi (>= 0.8),
+    sf (>= 0.7-1),
+    shiny (>= 1.2.0),
+    shinyWidgets (>= 0.4.4)
 Suggests: 
     testthat
 RoxygenNote: 6.1.1

@@ -31,7 +31,7 @@ Usage
 
 This simple addin allows you to interactively create an `sf` spatial object that can then be saved and used in your code. To use, just open the addin add some geometry to the map and click `Done` when completed.
 
-![mapedit addin](images/mapedit_addin.png)
+![mapedit addin](inst/images/mapedit_addin.png)
 
 Selecting text within the `RStudio` IDE will modify the behavior of the addin. Where no text is selected the addin will save an `sf` object called `geom` into `.GlobalEnv`. To save a spatial object to file, the `Save` switch must be toggled using the addin interface. A file called `saved_geometry.geojson` will be created in the current working directory. If text is selected in `RStudio` this will be used for naming both the `sf` object and the created file.
 
@@ -45,7 +45,7 @@ Saving to File
 
 Spatial objects are saved to file using `sf::write_sf`. File names can be set by selecting text inside `RStudio` or via the naming bar at the bottom of the addin. The file naming bar can also be used to add file paths and to change output extensions.
 
-![image bar](images/save_file_bar.png)
+![image bar](inst/images/save_file_bar.png)
 
 The text seen in the naming bar is passed directly to `write_sf`. Most file drivers will be guessed by the extension. See `sf::st_drivers()` or [OGR formats](https://www.gdal.org/ogr_formats.html) for details; only `.geojson` and `.shp` have been tested.
 
