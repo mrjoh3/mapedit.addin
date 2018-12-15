@@ -4,7 +4,7 @@
 #' @title MapEdit Addin
 #' @description Create and save spatial objects within the Rstudio IDE
 #'
-#' @return
+#' @return sf object
 #' @importFrom miniUI miniPage miniContentPanel gadgetTitleBar miniButtonBlock
 #' @import mapedit
 #' @importFrom shiny callModule paneViewer observeEvent stopApp runGadget textInput updateTextInput div

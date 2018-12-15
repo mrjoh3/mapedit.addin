@@ -6,6 +6,9 @@
 \usage{
 mapeditAddin()
 }
+\value{
+sf object
+}
 \description{
 Create and save spatial objects within the Rstudio IDE
 }
