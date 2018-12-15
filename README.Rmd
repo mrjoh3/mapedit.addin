@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 
-The goal of `mapedit.addin` is to simplify the creation of spatial data by wrapping the `mapedit` package. As you can see in the code below the `mapedit` package already makes the process very simple. 
+The goal of `mapedit.addin` is to simplify the creation of spatial data by wrapping the [mapedit](https://github.com/r-spatial/mapedit) package. As you can see in the code below the `mapedit` package already makes the process very simple. 
 
 ```r
 library(mapview)

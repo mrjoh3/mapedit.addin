@@ -1,7 +1,7 @@
 
 
 
-#' @title MapEdit Addin
+#' @title mapedit Addin
 #' @description Create and save spatial objects within the Rstudio IDE
 #'
 #' @return sf object
