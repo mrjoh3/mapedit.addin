@@ -1,5 +1,5 @@
 Package: mapedit.addin
-Title: RSudio Addin for the mapedit package
+Title: RStudio Addin for the mapedit package
 Version: 0.1.0
 Authors@R: c(
     person("Matt", "Johnson", email = "mrjoh3@gmail.com",
