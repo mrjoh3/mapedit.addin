@@ -1,4 +1,4 @@
-Name: Get geometry
-Description: Get geometry from mapedit
+Name: Create Spatial Data
+Description: Create spatial data using mapedit
 Binding: mapeditAddin
 Interactive: true
