@@ -7,5 +7,5 @@
 mapeditAddin()
 }
 \description{
-MapEdit Addin
+Create and save spatial objects within the Rstudio IDE
 }
